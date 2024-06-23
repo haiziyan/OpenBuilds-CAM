@@ -187,7 +187,7 @@ function animateTree() {
     // $('#floating-tpaddpath-btn').addClass('success')
     $('#addJobBtn,#addJobMenuBtn').addClass('success').prop('disabled', false)
     $("#tpaddicon").addClass('fg-green')
-    $(".addJobBtn-text").html("Create Toolpath using (" + selectCount + ") selected vectors");
+    $(".addJobBtn-text").html("创建刀具路径 (" + selectCount + ") 选定的向量");
 
 
     if (toolpathsInScene.length > 0) {

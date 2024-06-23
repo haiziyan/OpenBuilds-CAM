@@ -25,7 +25,7 @@ function fillTree() {
 
 
   // Default Menu
-  var menuitem = `<li><a  href="#" onclick="addJob(-1);"><span class="fa fa-fw fa-plus"></span>Create a new operation...</a></li>`;
+  var menuitem = `<li><a  href="#" onclick="addJob(-1);"><span class="fa fa-fw fa-plus"></span>创建新操作...</a></li>`;
   $('#toolpathsmenu').append(menuitem);
 
   clearSceneFlag = true;
@@ -55,7 +55,8 @@ function fillTree() {
                   <table>
                     <tr>
                     <td>
-                    <h6 style="margin: 0px 0px;"><small>Toolpath: <b><span contenteditable="true" data-id="` + i + `">` + toolpathsInScene[i].name + `</span></b> [` + operation + `]`
+                    <h6 style="margin: 0px 0px;"><small>
+                    刀具路径： <b><span contenteditable="true" data-id="` + i + `">` + toolpathsInScene[i].name + `</span></b> [` + operation + `]`
         if (!toolpathsInScene[i].userData.visible) {
           toolp += " (hidden) "
         }
@@ -114,7 +115,7 @@ function fillTree() {
       $('#toolpathstable').append(toolp);
 
       // append toolpath to menu
-      var string = `Add selection to: ` + toolpathsInScene[i].name + `: ` + operation
+      var string = `将选择添加到: ` + toolpathsInScene[i].name + `: ` + operation
       if (string.length > 48) {
         string = string.substring(0, 48) + "..."
       }
@@ -123,7 +124,7 @@ function fillTree() {
 
 
       // append removal toolpath to menu
-      var string = `Delete selection from: ` + toolpathsInScene[i].name + `: ` + operation
+      var string = `删除选择从: ` + toolpathsInScene[i].name + `: ` + operation
       if (string.length > 48) {
         string = string.substring(0, 48) + "..."
       }
