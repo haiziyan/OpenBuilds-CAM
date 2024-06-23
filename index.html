@@ -354,9 +354,9 @@
 							<button id="resetViewBtn" title="Stop Sim" class="button dark drop-shadow" onclick="resetView(object)"><i class="fas fa-stop"></i> 重置视图</button>&nbsp;
 							<div class="text-left viewer-checkboxes drop-shadow">
 								<div data-role="collapse" data-collapsed="false" data-toggle-element="#collapse_toggle_1">
-									<input type="checkbox" data-role="checkbox" data-caption="Documents" checked data-style="2" id="view-docs">
-									<input type="checkbox" data-role="checkbox" data-caption="Toolpaths" checked data-style="2" id="view-toolpath">
-									<input type="checkbox" data-role="checkbox" data-caption="GCODE" checked data-style="2" id="view-gcode">
+									<input type="checkbox" data-role="checkbox" data-caption="文档" checked data-style="2" id="view-docs">
+									<input type="checkbox" data-role="checkbox" data-caption="刀具路径" checked data-style="2" id="view-toolpath">
+									<input type="checkbox" data-role="checkbox" data-caption="G代码" checked data-style="2" id="view-gcode">
 								</div>
 							</div>
 						</div>
@@ -445,7 +445,7 @@
 								</div>
 							</div>
 							<div class="window-content p-1 text-center  mt-1" style="overflow-y:hidden;">
-								<button class="button drop-shadow" style="width: 300px;" title=" Generate GCODE" id="generatetpgcode" onclick="makeGcode();"><span class="fa fa-cubes fa-fw icon"></span>生成GCODE</button>
+								<button class="button drop-shadow" style="width: 300px;" title="生成GCODE" id="generatetpgcode" onclick="makeGcode();"><span class="fa fa-cubes fa-fw icon"></span>生成GCODE</button>
 							</div>
 						</div>
 
@@ -460,9 +460,9 @@
 
 							<div class="window-content p-1 text-center  mt-1" style="overflow-y:hidden;">
 
-								<button class="button drop-shadow" title="Save GCODE" id="gcodesavebtn2" onclick="saveFile();"><span class="fa fa-save fa-fw icon"></span>保存GCODE</button>
-								<button class="button drop-shadow" title="Preview GCODE" id="gcodeviewbtn2" onclick="previewFile();"><span id="gcodepreviewicon" class="fa fa-eye fa-fw icon fg-gray"></span></button>
-								<button class="button drop-shadow" title="Clear GCODE" id="gcodetrashbtn2" onclick="trashGcode();"><span id="trashicon" class="fa fa-trash fa-fw fg-gray icon"></span></button>
+								<button class="button drop-shadow" title="保存GCODE" id="gcodesavebtn2" onclick="saveFile();"><span class="fa fa-save fa-fw icon"></span>保存GCODE</button>
+								<button class="button drop-shadow" title="预览GCODE" id="gcodeviewbtn2" onclick="previewFile();"><span id="gcodepreviewicon" class="fa fa-eye fa-fw icon fg-gray"></span></button>
+								<button class="button drop-shadow" title="清除GCODE" id="gcodetrashbtn2" onclick="trashGcode();"><span id="trashicon" class="fa fa-trash fa-fw fg-gray icon"></span></button>
 
 							</div>
 

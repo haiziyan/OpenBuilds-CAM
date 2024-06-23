@@ -50,17 +50,17 @@ function loadLastClosedOnPageload() {
 
       Metro.dialog.create({
         width: 500,
-        title: "Found a recoverable Project",
-        content: "<div>Would you like to recover the previously used Project, or would you like to start with a clean New Project?</div>",
+        title: "找到一个可恢复的项目",
+        content: "<div>您是要恢复以前使用的项目，还是要从一个新项目开始?</div>",
         actions: [{
-            caption: "<i class=\"far fa-fw fa-save\"></i>Recover last used Project",
+            caption: "<i class=\"far fa-fw fa-save\"></i>恢复上次使用的项目",
             cls: "js-dialog-close success",
             onclick: function() {
               parseLoadWorkspace(lastWorkspace, true)
             }
           },
           {
-            caption: "<i class=\"far fa-fw fa-file\"></i>Start with a New Project",
+            caption: "<i class=\"far fa-fw fa-file\"></i>从新项目开始",
             cls: "js-dialog-close success",
             onclick: function() {
               // console.log("Starting wtih a clean workspace")
@@ -140,11 +140,11 @@ function storeRedo() {
 
 function exportWorkspace() {
   Metro.dialog.create({
-    title: "Save Workspace (Export .OBC file)",
+    title: "保存工作区 (Export .OBC file)",
     content: `<div class="form-group">
            <label>Filename:</label>
            <input type="text" id="workspaceFilename" placeholder="` + 'workspace-' + date.yyyymmdd() + '.obc' + `" value="` + 'workspace-' + date.yyyymmdd() + '.obc' + `"/>
-           <small class="text-muted">What would you like to name the workspace export?</small>
+           <small class="text-muted">您想为工作区导出命名什么？</small>
        </div>
     `,
     actions: [{

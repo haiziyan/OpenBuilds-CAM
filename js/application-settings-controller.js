@@ -475,20 +475,20 @@ $(document).ready(function() {
   <!-- Settings Modal -->
 
   <div class="dialog dark" data-overlay-click-close="true" data-role="dialog" id="settingsmodal" data-width="730" data-to-top="true">
-    <div class="dialog-title">Application Settings</div>
+    <div class="dialog-title">应用程序设置</div>
     <div class="dialog-content" style="max-height: calc(100vh - 200px);overflow-y: auto; overflow-x: hidden;">
       <form>
 
         <div>
-          <center><h6>Welcome to OpenBuilds CAM</h6> Let us help you get set up!</center>
+          <center><h6>欢迎使用 OBCAM</h6> 让我们帮助您进行设置！</center>
         </div>
 
           <ul class="step-list mb-3">
 
             <li>
-              <h6>Select your Machine<br><small>Tell us what machine you have?</small></h6>
+              <h6>选择您的机器<br><small>告诉我们你有什么机器？</small></h6>
               <div>
-                <a style="width: 100%;" class="button dropdown-toggle bd-openbuilds outline" id="context_toggle2"><img src="images/mch/sphinx55.png"/> Select Machine</a>
+                <a style="width: 100%;" class="button dropdown-toggle bd-openbuilds outline" id="context_toggle2"><img src="images/mch/sphinx55.png"/> 选择机器</a>
                 <ul class="ribbon-dropdown" data-role="dropdown" data-duration="100">
                     <li>
                       <a href="#" class="dropdown-toggle"><img src="images/mch/acro55.png" width="16px"/> OpenBuilds Acro</a>
@@ -550,7 +550,7 @@ $(document).ready(function() {
             </li>
 
             <li>
-              <h6>Add-Ons Installed<br><small>Telling us what kind of attachments the machine has, allows us to setup the GCODE to control these devices correctly from within the job</small></h6>
+              <h6>已安装附加组件<br><small>告诉我们机器有什么样的附件，使我们能够设置 GCODE 以从作业中正确控制这些设备</small></h6>
 
               <ul class="image-checkbox-ul">
                 <li>
@@ -596,9 +596,9 @@ $(document).ready(function() {
             </li>
 
             <li>
-              <h6>Advanced Settings<br><small>If you have any custom requirements, please customise the settings in the Advanced Settings section</small></h6>
+              <h6>高级设置<br><small>如果您有任何自定义要求，请自定义“高级设置”部分中的设置</small></h6>
 
-              <button class="button" id="collapse_toggle_2">Show Advanced Settings</button>
+              <button class="button" id="collapse_toggle_2">显示高级设置</button>
               <div class="pos-relative">
                   <div data-role="collapse"
                        data-toggle-element="#collapse_toggle_2" data-collapsed="true">
@@ -710,8 +710,8 @@ $(document).ready(function() {
     </div>
     <div class="dialog-actions">
 
-      <button class="button secondary outline js-dialog-close">Cancel</button>
-      <button id="savesettings" type="button" class="button js-dialog-close success">Save</button>
+      <button class="button secondary outline js-dialog-close">取消</button>
+      <button id="savesettings" type="button" class="button js-dialog-close success">保存</button>
     </div>
   </div>
   <!-- #settingsmodal -->

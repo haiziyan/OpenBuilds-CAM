@@ -226,7 +226,7 @@ function updateCamUserData(i) {
   toolpathsInScene[i].userData.camPenDown = $('#tpendown' + i).val();
   toolpathsInScene[i].userData.advanced = $('#advanced' + i).is(":checked");; // Marlin, Stepcraft, Mach3, LinuxCNC
   toolpathsInScene[i].name = $('#tOpName' + i).val();
-  $('#statusTitle').html('Configure Toolpath: ' + toolpathsInScene[i].userData.camOperation);
+  $('#statusTitle').html('配置刀具路径： ' + toolpathsInScene[i].userData.camOperation);
 
   // store last used values in localStorage
   localStorage.setItem('lastCamOperation', JSON.stringify(toolpathsInScene[i].userData, inflatedReplacer));
@@ -245,19 +245,19 @@ function setupJob(i) {
   // $('#statusmodal').modal('show');
   Metro.dialog.open('#statusmodal')
   $('#statusTitle').empty();
-  $('#statusTitle').html('Configure Toolpath: ');
+  $('#statusTitle').html('配置刀具路径： ');
   $('#statusBody').empty();
   $('#statusBody2').empty();
 
   // $('#statusBody').html('' );
   var template2 = `
-    Configure the toolpath parameters:
+    配置刀具路径参数：
     <hr>
     <div id="toolpathWarnings"></div>
     <table class="table striped compact">
 
       <tr>
-        <td>Name:</td>
+        <td>名字：</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="far fa-edit fa-fw"></i></span>
@@ -267,7 +267,7 @@ function setupJob(i) {
       </tr>
 
       <tr>
-        <td>Type of cut: </td>
+        <td>切割类型： </td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="fa fa-wrench fa-fw" aria-hidden="true"></i></span>
@@ -615,7 +615,7 @@ function setupJob(i) {
     </table>
   </div>`
   $('#statusBody2').html(template2);
-  $('#statusFooter').html(`<button type="button" id="previewToolpathBtn" class="button success" onclick="toolpathPreview(` + i + `); fillTree();">Apply and Preview Toolpath </button><button class="button js-dialog-close">Close</button>`);
+  $('#statusFooter').html(`<button type="button" id="previewToolpathBtn" class="button success" onclick="toolpathPreview(` + i + `); fillTree();">应用和预览刀具路径 </button><button class="button js-dialog-close">关闭</button>`);
   noMode(); // Default to NOOP
   $("#tOpName" + i).focus()
   Metro.init();
@@ -679,7 +679,7 @@ function setupJob(i) {
     $('#tunion' + i).val(toolpathsInScene[i].userData.camUnion).prop('selected', true);
     $('#tdirection' + i).val(toolpathsInScene[i].userData.camDirection).prop('selected', true);
     $('#tOpName' + i).val(toolpathsInScene[i].name);
-    $('#statusTitle').html('Configure Toolpath: ' + toolpathsInScene[i].userData.camOperation);
+    $('#statusTitle').html('配置刀具路径： ' + toolpathsInScene[i].userData.camOperation);
     $('#advanced' + i).prop('checked', toolpathsInScene[i].userData.advanced);
     if (toolpathsInScene[i].userData.advanced) {
       setTimeout(function() {
