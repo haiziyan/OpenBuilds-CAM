@@ -164,7 +164,7 @@ function generateGcode(index, toolpathGrp, cutSpeed, plungeSpeed, spindleRpm, la
   if (!toolpathGrp) {
     var message = `Toolpath Error: One or more of your toolpaths is not configured.  You need to configure the toolpaths, before generating GCODE`
     Metro.toast.create(message, null, 4000, 'bg-red');
-    $("#generatetpgcode").html("<i class='fa fa-cubes' aria-hidden='true'></i> Generate G-Code");
+    $("#generatetpgcode").html("<i class='fa fa-cubes' aria-hidden='true'></i> 生成G代码");
     $("#generatetpgcode").prop('disabled', false);
     $("#generatetpgcode").addClass('success');
     $('#gcodesavebtn2').removeClass('disabled');
