@@ -93,7 +93,7 @@
 													<span class="far fa-folder-open fg-amber"></span>
 												</span>
 												<input id="file" type="file" accept=".svg,.dxf,.gif,.jpg,.jpeg,.tiff,.png,.bmp,.gbl,.gtl,.gbr,.dri,.txt" multiple />
-												<span class="caption">打开<br>图纸</span>
+												<span class="caption">打开<br>绘图</span>
 											</div>
 
 
@@ -113,11 +113,11 @@
 														<span class="icon">
 															<span class="fas fa-download"></span>
 														</span>
-														<span class="caption">保存/打开 项目</span>
+														<span class="caption">保存/打开项目</span>
 													</button>
 													<ul class="ribbon-dropdown" data-role="dropdown" data-duration="100">
-														<li onclick="exportWorkspace()"><a href="#">Save Project (Export .OBC file)</a></li>
-														<li class="btn-file"><a href="#">Open Project (.JSON, .OBC)</a><input type="file" id="workspaceImport" accept=".json,.obc" multiple style="height: 26px;" /></li>
+														<li onclick="exportWorkspace()"><a href="#">保存项目 (Export .OBC file)</a></li>
+														<li class="btn-file"><a href="#">打开项目 (.JSON, .OBC)</a><input type="file" id="workspaceImport" accept=".json,.obc" multiple style="height: 26px;" /></li>
 													</ul>
 												</div>
 												<div>
@@ -125,7 +125,7 @@
 														<span class="icon">
 															<span class="fas fa-cog"></span>
 														</span>
-														<span class="caption">Load Example Project</span>
+														<span class="caption">加载示例项目</span>
 													</button>
 													<ul class="ribbon-dropdown" data-role="dropdown" data-duration="100">
 														<li onclick="helloWorld()"><a href="#">CNC Hello World</a></li>
@@ -144,7 +144,7 @@
 													<span class="icon">
 														<span class="fas fa-font"></span>
 													</span>
-													<span class="caption">Text</span>
+													<span class="caption">文字</span>
 												</button>
 												<br>
 
@@ -153,7 +153,7 @@
 														<span class="icon">
 															<span class="far fa-square"></span>
 														</span>
-														<span class="caption">Shapes</span>
+														<span class="caption">形状</span>
 													</button>
 													<ul class="ribbon-dropdown" data-role="dropdown" data-duration="100">
 														<li onclick="Metro.dialog.open(' #addShapeCircle ');"><a href="#">Circle</a></li>
@@ -169,13 +169,13 @@
 														<span class="icon">
 															<span class="far fa-images"></span>
 														</span>
-														<span class="caption">Icons</span>
+														<span class="caption">图标</span>
 													</button>
 
 												</div>
 
 											</div>
-											<span class="title">Insert</span>
+											<span class="title">绘制</span>
 										</div>
 
 										<div class="group">
@@ -184,17 +184,17 @@
 													<span class="icon">
 														<span class="fa fa-eye"></span>
 													</span>
-													<span class="caption">Job</span>
+													<span class="caption">工作台</span>
 												</button>
 												<br>
 												<button class="ribbon-icon-button" onclick="resetView(scene.getObjectByName('Grid'));">
 													<span class="icon">
 														<span class="fa fa-th"></span>
 													</span>
-													<span class="caption">Grid</span>
+													<span class="caption">网格</span>
 												</button>
 											</div>
-											<span class="title">Zoom</span>
+											<span class="title">缩放</span>
 										</div>
 										<div class="group">
 											<div class="ribbon-group">
@@ -202,17 +202,17 @@
 													<span class="icon">
 														<span class="fas fa-undo"></span>
 													</span>
-													<span class="caption">Undo</span>
+													<span class="caption">撤销</span>
 												</button>
 												<br>
 												<button class="ribbon-icon-button" onclick="redo()">
 													<span class="icon">
 														<span class="fas fa-redo"></span>
 													</span>
-													<span class="caption">Redo</span>
+													<span class="caption">恢复</span>
 												</button>
 											</div>
-											<span class="title">Undo/Redo</span>
+											<span class="title">撤销/恢复</span>
 										</div>
 
 
@@ -224,7 +224,7 @@
 												<span class="icon">
 													<span class="fa fa-fw fa-cogs"></span>
 												</span>
-												<span class="caption">Settings</span>
+												<span class="caption">设置</span>
 											</button>
 
 											<div class="ribbon-group">
@@ -232,7 +232,7 @@
 													<span class="icon">
 														<span class="fa fa-download fa-fw"></span>
 													</span>
-													<span class="caption">Backup Settings</span>
+													<span class="caption">备份设置</span>
 												</button>
 												<br>
 
@@ -240,7 +240,7 @@
 													<span class="icon">
 														<span class="fa fa-upload fa-fw"></span>
 													</span>
-													<span class="caption">Restore from file</span>
+													<span class="caption">恢复设置</span>
 													<input id="jsonFile" type="file" accept=".json" />
 												</button>
 												<br>
@@ -249,15 +249,15 @@
 													<span class="icon">
 														<span class="fa fa-exclamation-triangle fa-fw"></span>
 													</span>
-													<span class="caption">Factory Reset</span>
+													<span class="caption">默认设置</span>
 												</button>
 												<br>
 											</div>
-											<span class="title">Settings</span>
+											<span class="title">设置</span>
 										</div>
 
 
-
+<!--
 										<div class="group">
 											<div class="ribbon-group">
 												<button class="ribbon-icon-button" onclick="getChangelog()">
@@ -276,7 +276,7 @@
 											</div>
 											<span class="title">App</span>
 										</div>
-
+-->
 										<div class="group">
 
 											<div id="ddThemeButton">
@@ -284,11 +284,11 @@
 													<span class="icon" id="currentThemeIcon">
 														<i class="fas fa-paint-brush"></i>
 													</span>
-													<span class="caption" id="currentThemeName">Dark<br>Mode</span>
-													<span class="h6 badge bg-green fg-white"> <i class="fas fa-brush  fa-spin"></i> New!</span>
+													<span class="caption" id="currentThemeName">黑暗<br>模式</span>
+													<!--<span class="h6 badge bg-green fg-white"> <i class="fas fa-brush  fa-spin"></i> New!</span>-->
 												</button>
 											</div>
-											<span class="title">Theme</span>
+											<span class="title">主题</span>
 										</div>
 
 
@@ -300,7 +300,7 @@
 
 								<!-- #draganddrop -->
 								<div id="draganddrop" style="display: none;">
-									<div class="well">Drop File(s) Here!</div>
+									<div class="well">将文件放到此处！</div>
 									<img src="images/draganddrop.svg" />
 								</div>
 								<div class="sidemenu">
@@ -371,29 +371,29 @@
 						<div id="renderDocuments" class="window drop-shadow">
 							<div class="window-caption bg-openbuilds">
 								<i class="far fa-file-alt fa-fw ml-1 mr-1"></i>
-								<span class="title">1. Documents <span class="workspaceTitle"></span></span>
+								<span class="title">1. 文档 <span class="workspaceTitle"></span></span>
 							</div>
 							<div id="selectoverlay" class="text-center mt-1">
-								<button class="button drop-shadow" id="selectAll"><span class="far fa-check-square"></span> All</button>
-								<button class="button drop-shadow" id="selectNone"><span class="far fa-square"></span> None</button>
-								<button class="button drop-shadow" id="selectInv"><span class="fas fa-check"></span> Invert</button>
-								<button class="button drop-shadow" id="selectDel"><span class="fas fa-trash"></span> Delete</button>
+								<button class="button drop-shadow" id="selectAll"><span class="far fa-check-square"></span> 全选</button>
+								<button class="button drop-shadow" id="selectNone"><span class="far fa-square"></span> 不选</button>
+								<button class="button drop-shadow" id="selectInv"><span class="fas fa-check"></span> 反选</button>
+								<button class="button drop-shadow" id="selectDel"><span class="fas fa-trash"></span> 删除</button>
 							</div>
 							<div class="window-content p-1" style="overflow-y:scroll;">
 								<!-- Documents Here -->
 								<div class="pt-2" id="documentactivity" style="display: none;">
 									<center>
-										<h5>Please Wait </h5>
+										<h5>请等待 </h5>
 										<div data-role="activity" data-type="ring" data-style="dark"></div>
-										<h6>Parsing Documents...</h6>
+										<h6>正在解析文档...</h6>
 								</div>
 
 								<div id="documentstree">
 									<div id="nodocuments" style="display:none;">
-										<p class="text-secondary text-center mt-3">Please load some vectors from DXF (Polylines) or SVG (Paths); or Images (Traceable); or insert a Shape, Icon or some Text using the built-in tools to get started
+										<p class="text-secondary text-center mt-3">请从 DXF（折线）或 SVG（路径）加载一些矢量;或图像（可追溯）;或使用内置工具插入形状、图标或一些文本以开始使用
 										</p>
 										<p class="text-center">
-											<button class="button success drop-shadow" style="width: 300px;" title="Open Drawing" onclick="$('#file').click();"><span class="far fa-folder-open fa-fw icon"></span>Open Drawing</button>
+											<button class="button success drop-shadow" style="width: 300px;" title="Open Drawing" onclick="$('#file').click();"><span class="far fa-folder-open fa-fw icon"></span>打开绘图</button>
 										</p>
 
 
@@ -408,14 +408,14 @@
 						<div class="window drop-shadow mt-2">
 							<div class="window-caption bg-openbuilds">
 								<i class="fas fa-tasks fa-fw ml-1 mr-1"></i>
-								<span class="title">2. Configure Toolpaths</span>
+								<span class="title">2. 配置刀具路径</span>
 								<div class="buttons">
 
 								</div>
 							</div>
 							<div id="tpathoverlay" class="text-center mt-1">
 								<div class="split-button drop-shadow">
-									<button class="button" id="addJobBtn" onclick="addJob(-1);"><span class="icon fa-fw fa fa-plus"></span><span class="addJobBtn-text">Please select Vector(s) to create toolpaths</span></button>
+									<button class="button" id="addJobBtn" onclick="addJob(-1);"><span class="icon fa-fw fa fa-plus"></span><span class="addJobBtn-text">请选择“矢量”以创建刀具路径</span></button>
 									<button class="split dropdown-toggle outline" id="addJobMenuBtn" display: none;></button>
 									<ul class="d-menu" data-role="dropdown" id="toolpathsmenu">
 										<!--  -->
@@ -427,9 +427,9 @@
 							<div class="window-content p-1" style="overflow-y:scroll;">
 								<div class="pt-2" id="toolpathactivity" style="display: none;">
 									<center>
-										<h5>Please Wait </h5>
+										<h5>请等待 </h5>
 										<div data-role="activity" data-type="ring" data-style="dark"></div>
-										<h6>Calculating Toolpaths...</h6>
+										<h6>正在计算刀具路径...</h6>
 								</div>
 								<div id="toolpathtree">
 								</div>
@@ -440,19 +440,19 @@
 						<div class="window drop-shadow mt-2">
 							<div class="window-caption bg-openbuilds">
 								<i class="fa fa-cubes fa-fw ml-1 mr-1"></i>
-								<span class="title">3. Create G-code</span>
+								<span class="title">3. 创建G代码</span>
 								<div class="buttons">
 								</div>
 							</div>
 							<div class="window-content p-1 text-center  mt-1" style="overflow-y:hidden;">
-								<button class="button drop-shadow" style="width: 300px;" title=" Generate GCODE" id="generatetpgcode" onclick="makeGcode();"><span class="fa fa-cubes fa-fw icon"></span>Generate GCODE</button>
+								<button class="button drop-shadow" style="width: 300px;" title=" Generate GCODE" id="generatetpgcode" onclick="makeGcode();"><span class="fa fa-cubes fa-fw icon"></span>生成GCODE</button>
 							</div>
 						</div>
 
 						<div class="window drop-shadow mt-2">
 							<div class="window-caption bg-openbuilds">
 								<i class="fa fa-save fa-fw ml-1 mr-1"></i>
-								<span class="title">4. Export G-code</span>
+								<span class="title">4. 导出G代码</span>
 								<div class="buttons">
 								</div>
 							</div>
@@ -460,7 +460,7 @@
 
 							<div class="window-content p-1 text-center  mt-1" style="overflow-y:hidden;">
 
-								<button class="button drop-shadow" title="Save GCODE" id="gcodesavebtn2" onclick="saveFile();"><span class="fa fa-save fa-fw icon"></span>Save GCODE</button>
+								<button class="button drop-shadow" title="Save GCODE" id="gcodesavebtn2" onclick="saveFile();"><span class="fa fa-save fa-fw icon"></span>保存GCODE</button>
 								<button class="button drop-shadow" title="Preview GCODE" id="gcodeviewbtn2" onclick="previewFile();"><span id="gcodepreviewicon" class="fa fa-eye fa-fw icon fg-gray"></span></button>
 								<button class="button drop-shadow" title="Clear GCODE" id="gcodetrashbtn2" onclick="trashGcode();"><span id="trashicon" class="fa fa-trash fa-fw fg-gray icon"></span></button>
 
