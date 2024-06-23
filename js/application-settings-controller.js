@@ -211,7 +211,7 @@ function selectToolhead() {
   $('#startgcode').val("");
   $('#endgcode').val("");
   $("#ihsgcode").val("");
-  var startcode = `; Created by OpenBuilds CAM\nG54; Work Coordinates\nG21; mm-mode\nG90; Absolute Positioning\n`;
+  var startcode = `; Created by OBCAM\nG54; Work Coordinates\nG21; mm-mode\nG90; Absolute Positioning\n`;
   var endcode = "";
 
   if ($("#hasRouter").is(':checked')) {

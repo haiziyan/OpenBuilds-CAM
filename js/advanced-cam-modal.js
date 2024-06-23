@@ -14,7 +14,7 @@ function typeofOperation(newval, objectseq) {
   } else if (newval == "激光：矢量（光栅填充）（测试版）") {
     laserRasterMode(objectseq);
     updateCamUserData(objectseq);
-  } else if (newval == "Drill: Peck (Centered)") {
+  } else if (newval == "钻孔：佩克（居中）") {
     drillPeckMode(objectseq);
     updateCamUserData(objectseq);
   } else if (newval == "钻孔：连续（居中）") {
@@ -274,7 +274,7 @@ function setupJob(i) {
             <select class="cam-form-field cam-form-field-right active-border camOperationSelect" id="toperation` + i + `" objectseq="` + i + `" style="width: 350px; border-left: solid 1px #ccc; padding: 0px; padding-left: 10px;">
               <option>... 选择操作 ...</option>
               <optgroup label="钻孔" class="camOptgroup">
-                <option class="camOption">Drill: Peck (Centered)</option>
+                <option class="camOption">钻孔：佩克（居中）</option>
                 <option class="camOption">钻孔：连续（居中）</option>
               </optgroup>
               <optgroup label="铣削/排料操作" class="camOptgroup">

@@ -50,7 +50,7 @@ function drill(config) {
 
       var lastz = 0
 
-      if (config.toolpath.userData.camOperation == "Drill: Peck (Centered)") {
+      if (config.toolpath.userData.camOperation == "钻孔：佩克（居中）") {
         for (x = 0; x < config.zdepth + config.zstep; x += config.zstep) {
           if (x > config.zdepth) {
             var zval = -config.zdepth;

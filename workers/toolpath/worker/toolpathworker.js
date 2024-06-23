@@ -139,8 +139,8 @@ if (typeof window == "undefined") { // Only run as worker
       console.log("拖刀 切口");
       config.offset = toolpath.userData.camDragOffset;
       toolpath.userData.inflated = workerDragknifePath(config)
-    } else if (operation == "Drill: Peck (Centered)") {
-      console.log("Drill: Peck (Centered)");
+    } else if (operation == "钻孔：佩克（居中）") {
+      console.log("钻孔：佩克（居中）");
       toolpath.userData.inflated = workerDrill(config)
     } else if (operation == "钻孔：连续（居中）") {
       console.log("钻孔：连续（居中）");
@@ -1995,7 +1995,7 @@ if (typeof window == "undefined") { // Only run as worker
 
         var lastz = 0
 
-        if (config.toolpath.userData.camOperation == "Drill: Peck (Centered)") {
+        if (config.toolpath.userData.camOperation == "钻孔：佩克（居中）") {
           for (x = 0; x < config.zdepth + config.zstep; x += config.zstep) {
             if (x > config.zdepth) {
               var zval = -config.zdepth;
