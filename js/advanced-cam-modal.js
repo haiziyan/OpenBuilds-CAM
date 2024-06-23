@@ -1,62 +1,62 @@
 function typeofOperation(newval, objectseq) {
-  if (newval == "... Select Operation ...") {
+  if (newval == "... 选择操作 ...") {
     noMode(objectseq);
     updateCamUserData(objectseq);
-  } else if (newval == "Laser: Vector (no path offset)") {
+  } else if (newval == "激光：矢量（无路径偏移）") {
     laserMode(objectseq);
     updateCamUserData(objectseq);
-  } else if (newval == "Laser: Vector (path inside)") {
+  } else if (newval == "激光：矢量（内部路径）") {
     laserInsideMode(objectseq);
     updateCamUserData(objectseq);
-  } else if (newval == "Laser: Vector (path outside)") {
+  } else if (newval == "激光：矢量（外部路径）") {
     laserOutsideMode(objectseq);
     updateCamUserData(objectseq);
-  } else if (newval == "Laser: Vector (raster fill) (Beta)") {
+  } else if (newval == "激光：矢量（光栅填充）（测试版）") {
     laserRasterMode(objectseq);
     updateCamUserData(objectseq);
   } else if (newval == "Drill: Peck (Centered)") {
     drillPeckMode(objectseq);
     updateCamUserData(objectseq);
-  } else if (newval == "Drill: Continuous (Centered)") {
+  } else if (newval == "钻孔：连续（居中）") {
     drillMode(objectseq);
     updateCamUserData(objectseq);
-  } else if (newval == "CNC: Vector (no offset)") {
+  } else if (newval == "CNC: 矢量（无偏移）") {
     cncNoOffsetMode(objectseq);
     updateCamUserData(objectseq);
-  } else if (newval == "CNC: Vector (path outside)") {
+  } else if (newval == "CNC: 矢量（外部路径）") {
     cncOutsideMode(objectseq);
     updateCamUserData(objectseq);
-  } else if (newval == "CNC: Vector (path inside)") {
+  } else if (newval == "CNC: 矢量（内部路径）") {
     cncInsideMode(objectseq);
     updateCamUserData(objectseq);
-  } else if (newval == "CNC: Pocket") {
+  } else if (newval == "CNC: 袖珍") {
     cncPocketMode(objectseq);
     updateCamUserData(objectseq);
-  } else if (newval == "CNC: V-Engrave") {
+  } else if (newval == "数控：V 型雕刻") {
     cncVEngMode(objectseq);
     updateCamUserData(objectseq);
-  } else if (newval == "Plasma: Vector (path outside)") {
+  } else if (newval == "等离子：矢量（外部路径）") {
     plasmaMode(objectseq);
     updateCamUserData(objectseq);
-  } else if (newval == "Plasma: Vector (path inside)") {
+  } else if (newval == "等离子：矢量（内部路径）") {
     plasmaMode(objectseq);
     updateCamUserData(objectseq);
-  } else if (newval == "Plasma: Vector (no path offset)") {
+  } else if (newval == "等离子：矢量（无路径偏移）") {
     plasmaMode(objectseq);
     updateCamUserData(objectseq);
-  } else if (newval == "Drag Knife: Cutout") {
+  } else if (newval == "拖刀 切口") {
     dragKnifeMode(objectseq);
     updateCamUserData(objectseq);
-  } else if (newval == "Pen Plotter: (no offset)") {
+  } else if (newval == "钢笔绘图仪：（无偏移）") {
     plotterMode(objectseq);
     updateCamUserData(objectseq);
-  } else if (newval == "Pen Plotter: (path inside)") {
+  } else if (newval == "钢笔绘图仪：（内部路径）") {
     plotterMode(objectseq);
     updateCamUserData(objectseq);
-  } else if (newval == "Pen Plotter: (path outside)") {
+  } else if (newval == "钢笔绘图仪：（外部路径）") {
     plotterMode(objectseq);
     updateCamUserData(objectseq);
-  } else if (newval == "Pen Plotter: (lines fill)") {
+  } else if (newval == "钢笔绘图仪：（线条填充）") {
     penRasterMode(objectseq);
     updateCamUserData(objectseq);
   }
@@ -288,7 +288,7 @@ function setupJob(i) {
                 <option class="camOption">激光：矢量（内部路径）</option>
                 <option class="camOption">激光：矢量（外部路径）</option>
                 <option class="camOption">激光：矢量（光栅填充）（测试版）</option>
-              <!--option class="camOption">CNC: V-Engrave</option-->
+              <!--option class="camOption">数控：V 型雕刻</option-->
               </optgroup>
               <optgroup label="等离子操作" class="camOptgroup">
                 <option class="camOption">等离子：矢量（外部路径）</option>

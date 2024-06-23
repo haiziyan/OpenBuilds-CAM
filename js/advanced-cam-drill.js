@@ -81,7 +81,7 @@ function drill(config) {
           drillEntity.add(line)
           lastz = zval
         }
-      } else if (config.toolpath.userData.camOperation == "Drill: Continuous (Centered)") {
+      } else if (config.toolpath.userData.camOperation == "钻孔：连续（居中）") {
         var pretty = shapeFromLine(circle, 0x6666600, 0.4)
         pretty.position.setX(center.x);
         pretty.position.setY(center.y);

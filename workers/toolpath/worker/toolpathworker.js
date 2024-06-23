@@ -66,61 +66,61 @@ if (typeof window == "undefined") { // Only run as worker
     self.postMessage(data);
     if (!operation) {
       console.log("Invalid Operation")
-    } else if (operation == "... Select Operation ...") {
+    } else if (operation == "... 选择操作 ...") {
       console.log("No operation");
-    } else if (operation == "Laser: Vector (no path offset)") {
-      console.log("Laser: Vector (no path offset)");
+    } else if (operation == "激光：矢量（无路径偏移）") {
+      console.log("激光：矢量（无路径偏移）");
       config.zstart = 0
       config.zstep = 0.1
       config.zdepth = 0.1
       config.offset = 0;
       toolpath.userData.inflated = workerInflateToolpath(config)
-    } else if (operation == "Laser: Vector (path inside)") {
-      console.log("Laser: Vector (path inside)");
+    } else if (operation == "激光：矢量（内部路径）") {
+      console.log("激光：矢量（内部路径）");
       config.zstart = 0
       config.zstep = 0.1
       config.zdepth = 0.1
       config.offset = (toolpath.userData.camSpotSize / 2) * -1;
       toolpath.userData.inflated = workerInflateToolpath(config)
-    } else if (operation == "Laser: Vector (path outside)") {
+    } else if (operation == "激光：矢量（外部路径）") {
       config.zstart = 0
       config.zstep = 0.1
       config.zdepth = 0.1
       config.offset = (toolpath.userData.camSpotSize / 2)
-      console.log("Laser: Vector (path outside)");
+      console.log("激光：矢量（外部路径）");
       toolpath.userData.inflated = workerInflateToolpath(config)
-    } else if (operation == "Laser: Vector (raster fill) (Beta)") {
+    } else if (operation == "激光：矢量（光栅填充）（测试版）") {
       config.offset = (toolpath.userData.camSpotSize / 2)
-      console.log("Laser: Vector (raster fill) (Beta)");
+      console.log("激光：矢量（光栅填充）（测试版）");
       config.angle = toolpath.userData.camFillAngle || 0;
       toolpath.userData.inflated = fillPath(config);
-    } else if (operation == "CNC: Vector (no offset)") {
-      console.log("CNC: Vector (no offset)");
+    } else if (operation == "CNC: 矢量（无偏移）") {
+      console.log("CNC: 矢量（无偏移）");
       config.offset = 0;
       toolpath.userData.inflated = workerInflateToolpath(config)
-    } else if (operation == "CNC: Vector (path inside)") {
-      console.log("CNC: Vector (path inside)");
+    } else if (operation == "CNC: 矢量（内部路径）") {
+      console.log("CNC: 矢量（内部路径）");
       config.offset = config.offset * -1;
       toolpath.userData.inflated = workerInflateToolpath(config)
-    } else if (operation == "CNC: Vector (path outside)") {
-      console.log("CNC: Vector (path outside)");
+    } else if (operation == "CNC: 矢量（外部路径）") {
+      console.log("CNC: 矢量（外部路径）");
       toolpath.userData.inflated = workerInflateToolpath(config)
-    } else if (operation == "CNC: Pocket") {
-      console.log("CNC: Pocket");
+    } else if (operation == "CNC: 袖珍") {
+      console.log("CNC: 袖珍");
       toolpath.userData.inflated = workerPocketPath(config)
-    } else if (operation == "CNC: V-Engrave") {
-      console.log("CNC: V-Engrave");
+    } else if (operation == "数控：V 型雕刻") {
+      console.log("数控：V 型雕刻");
       // no op yet
-    } else if (operation == "Plasma: Vector (path outside)") {
-      console.log("Plasma: Vector (path outside)");
+    } else if (operation == "等离子：矢量（外部路径）") {
+      console.log("等离子：矢量（外部路径）");
       config.zstart = parseFloat(toolpath.userData.camPlasmaZHeight) * -2
       config.zstep = parseFloat(toolpath.userData.camPlasmaZHeight)
       config.zdepth = parseFloat(toolpath.userData.camPlasmaZHeight) * -1
       config.offset = (toolpath.userData.camPlasmaKerf / 2)
       config.leadinval = toolpath.userData.camPlasmaLeadinDist
       toolpath.userData.inflated = workerInflateToolpath(config)
-    } else if (operation == "Plasma: Vector (path inside)") {
-      console.log("Plasma: Vector (path inside)");
+    } else if (operation == "等离子：矢量（内部路径）") {
+      console.log("等离子：矢量（内部路径）");
       // config.offset = config.offset * -1;
       config.zstart = parseFloat(toolpath.userData.camPlasmaZHeight) * -2
       config.zstep = parseFloat(toolpath.userData.camPlasmaZHeight)
@@ -128,42 +128,42 @@ if (typeof window == "undefined") { // Only run as worker
       config.offset = (toolpath.userData.camPlasmaKerf / 2) * -1
       config.leadinval = toolpath.userData.camPlasmaLeadinDist * -1
       toolpath.userData.inflated = workerInflateToolpath(config)
-    } else if (operation == "Plasma: Vector (no path offset)") {
-      console.log("Plasma: Vector (no path offset)");
+    } else if (operation == "等离子：矢量（无路径偏移）") {
+      console.log("等离子：矢量（无路径偏移）");
       config.zstart = parseFloat(toolpath.userData.camPlasmaZHeight) * -2
       config.zstep = parseFloat(toolpath.userData.camPlasmaZHeight)
       config.zdepth = parseFloat(toolpath.userData.camPlasmaZHeight) * -1
       config.offset = 0;
       toolpath.userData.inflated = workerInflateToolpath(config)
-    } else if (operation == "Drag Knife: Cutout") {
-      console.log("Drag Knife: Cutout");
+    } else if (operation == "拖刀 切口") {
+      console.log("拖刀 切口");
       config.offset = toolpath.userData.camDragOffset;
       toolpath.userData.inflated = workerDragknifePath(config)
     } else if (operation == "Drill: Peck (Centered)") {
       console.log("Drill: Peck (Centered)");
       toolpath.userData.inflated = workerDrill(config)
-    } else if (operation == "Drill: Continuous (Centered)") {
-      console.log("Drill: Continuous (Centered)");
+    } else if (operation == "钻孔：连续（居中）") {
+      console.log("钻孔：连续（居中）");
       toolpath.userData.inflated = workerDrill(config)
-    } else if (operation == "Pen Plotter: (no offset)") {
-      console.log("Pen Plotter: (no offset)");
+    } else if (operation == "钢笔绘图仪：（无偏移）") {
+      console.log("钢笔绘图仪：（无偏移）");
       config.zstep = 0.1
       config.zdepth = 0.1
       config.offset = 0;
       toolpath.userData.inflated = workerInflateToolpath(config)
-    } else if (operation == "Pen Plotter: (path inside)") {
+    } else if (operation == "钢笔绘图仪：（内部路径）") {
       console.log();
       config.zstep = 0.1
       config.zdepth = 0.1
       config.offset = config.offset * -1;
       toolpath.userData.inflated = workerInflateToolpath(config)
-    } else if (operation == "Pen Plotter: (path outside)") {
-      console.log("Pen Plotter: (path outside)");
+    } else if (operation == "钢笔绘图仪：（外部路径）") {
+      console.log("钢笔绘图仪：（外部路径）");
       config.zstep = 0.1
       config.zdepth = 0.1
       toolpath.userData.inflated = workerInflateToolpath(config)
-    } else if (operation == "Pen Plotter: (lines fill)") {
-      console.log("Pen Plotter: (lines fill)");
+    } else if (operation == "钢笔绘图仪：（线条填充）") {
+      console.log("钢笔绘图仪：（线条填充）");
       config.offset = (toolpath.userData.camSpotSize / 2)
       config.angle = toolpath.userData.camFillAngle || 0;
       toolpath.userData.inflated = fillPath(config);
@@ -2026,7 +2026,7 @@ if (typeof window == "undefined") { // Only run as worker
             drillEntity.add(line)
             lastz = zval
           }
-        } else if (config.toolpath.userData.camOperation == "Drill: Continuous (Centered)") {
+        } else if (config.toolpath.userData.camOperation == "钻孔：连续（居中）") {
           var pretty = shapeFromLine(circle, 0x6666600, 0.4)
           pretty.position.setX(center.x);
           pretty.position.setY(center.y);
