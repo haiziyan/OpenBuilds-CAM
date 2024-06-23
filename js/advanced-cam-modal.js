@@ -272,35 +272,35 @@ function setupJob(i) {
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="fa fa-wrench fa-fw" aria-hidden="true"></i></span>
             <select class="cam-form-field cam-form-field-right active-border camOperationSelect" id="toperation` + i + `" objectseq="` + i + `" style="width: 350px; border-left: solid 1px #ccc; padding: 0px; padding-left: 10px;">
-              <option>... Select Operation ...</option>
-              <optgroup label="Drilling Operations" class="camOptgroup">
+              <option>... 选择操作 ...</option>
+              <optgroup label="钻孔" class="camOptgroup">
                 <option class="camOption">Drill: Peck (Centered)</option>
-                <option class="camOption">Drill: Continuous (Centered)</option>
+                <option class="camOption">钻孔：连续（居中）</option>
               </optgroup>
-              <optgroup label="Milling/Routing Operations" class="camOptgroup">
-                <option class="camOption">CNC: Vector (no offset)</option>
-                <option class="camOption">CNC: Vector (path inside)</option>
-                <option class="camOption">CNC: Vector (path outside)</option>
-                <option class="camOption">CNC: Pocket</option>
+              <optgroup label="铣削/排料操作" class="camOptgroup">
+                <option class="camOption">CNC: 矢量（无偏移）</option>
+                <option class="camOption">CNC: 矢量（内部路径）</option>
+                <option class="camOption">CNC: 矢量（外部路径）</option>
+                <option class="camOption">CNC: 袖珍</option>
               </optgroup>
-              <optgroup label="Laser Operations" class="camOptgroup">
-                <option class="camOption">Laser: Vector (no path offset)</option>
-                <option class="camOption">Laser: Vector (path inside)</option>
-                <option class="camOption">Laser: Vector (path outside)</option>
-                <option class="camOption">Laser: Vector (raster fill) (Beta)</option>
+              <optgroup label="激光操作" class="camOptgroup">
+                <option class="camOption">激光：矢量（无路径偏移）</option>
+                <option class="camOption">激光：矢量（内部路径）</option>
+                <option class="camOption">激光：矢量（外部路径）</option>
+                <option class="camOption">激光：矢量（光栅填充）（测试版）</option>
               <!--option class="camOption">CNC: V-Engrave</option-->
               </optgroup>
-              <optgroup label="Plasma Operations" class="camOptgroup">
-                <option class="camOption">Plasma: Vector (path outside)</option>
-                <option class="camOption">Plasma: Vector (path inside)</option>
-                <option class="camOption">Plasma: Vector (no path offset)</option>
+              <optgroup label="等离子操作" class="camOptgroup">
+                <option class="camOption">等离子：矢量（外部路径）</option>
+                <option class="camOption">等离子：矢量（内部路径）</option>
+                <option class="camOption">等离子：矢量（无路径偏移）</option>
               </optgroup>
-              <optgroup label="Other" class="camOptgroup">
-                <option class="camOption">Drag Knife: Cutout</option>
-                <option class="camOption">Pen Plotter: (no offset)</option>
-                <option class="camOption">Pen Plotter: (path inside)</option>
-                <option class="camOption">Pen Plotter: (path outside)</option>
-                <option class="camOption">Pen Plotter: (lines fill)</option>
+              <optgroup label="其他" class="camOptgroup">
+                <option class="camOption">拖刀 切口</option>
+                <option class="camOption">钢笔绘图仪：（无偏移）</option>
+                <option class="camOption">钢笔绘图仪：（内部路径）</option>
+                <option class="camOption">钢笔绘图仪：（外部路径）</option>
+                <option class="camOption">钢笔绘图仪：（线条填充）</option>
               </optgroup>
             </select>
           </div>
