@@ -228,7 +228,7 @@
 											</button>
 
 											<div class="ribbon-group">
-												<button class="ribbon-icon-button" onclick="backupSettingsLocal()" title="Take a backup">
+												<button class="ribbon-icon-button" onclick="backupSettingsLocal()" title="做个备份">
 													<span class="icon">
 														<span class="fa fa-download fa-fw"></span>
 													</span>
@@ -236,7 +236,7 @@
 												</button>
 												<br>
 
-												<button class="ribbon-icon-button btn-file" title="Open a backup settings file">
+												<button class="ribbon-icon-button btn-file" title="打开备份设置文件">
 													<span class="icon">
 														<span class="fa fa-upload fa-fw"></span>
 													</span>
@@ -245,7 +245,7 @@
 												</button>
 												<br>
 
-												<button class="ribbon-icon-button btn-file" onclick="ConfirmDelete()" title="Reset all settings to default">
+												<button class="ribbon-icon-button btn-file" onclick="ConfirmDelete()" title="将所有设置重置为默认值">
 													<span class="icon">
 														<span class="fa fa-exclamation-triangle fa-fw"></span>
 													</span>
@@ -304,19 +304,19 @@
 									<img src="images/draganddrop.svg" />
 								</div>
 								<div class="sidemenu">
-									<div class="tbtn tbtnactive mouseSelectBtn" onclick="mouseSelectMode();" title="Mouse Select Mode">
+									<div class="tbtn tbtnactive mouseSelectBtn" onclick="mouseSelectMode();" title="鼠标选择模式">
 										<i class="fa fas fa-mouse-pointer" aria-hidden="true"></i>
 									</div>
 
-									<div class="tbtn mouseMoveBtn" onclick="mouseMoveMode();" title="Mouse Move Mode">
+									<div class="tbtn mouseMoveBtn" onclick="mouseMoveMode();" title="鼠标移动模式">
 										<i class="fas fa-arrows-alt " aria-hidden="true"></i>
 									</div>
 
-									<div class="tbtn mouseDelBtn" onclick="mouseEraseMode();" title="Mouse Erase Mode">
+									<div class="tbtn mouseDelBtn" onclick="mouseEraseMode();" title="鼠标擦除模式">
 										<i class="fas fa-eraser " aria-hidden="true"></i>
 									</div>
 									<!-- <hr class="bg-grayBlue"> -->
-									<div class="tbtn mouseScaleBtn" onclick="mouseScaleMode();" title="Mouse Scale/Move/Rotate Mode">
+									<div class="tbtn mouseScaleBtn" onclick="mouseScaleMode();" title="鼠标缩放/移动/旋转模式">
 										<i class="fas fa-ruler" aria-hidden="true"></i>
 									</div>
 
@@ -331,7 +331,7 @@
 								<div class="window">
 									<div class="window-caption drag-element bg-openbuilds">
 										<span class="icon fas fa-ruler"></span>
-										<span class="title">Transform</span>
+										<span class="title">变换</span>
 										<div class="buttons">
 											<span class="btn-close" onclick="scalewindow.style.visibility = 'hidden';"></span>
 										</div>
@@ -345,13 +345,13 @@
 
 						</div>
 						<div id="helpoverlay">
-							<kbd>Left Mouse</kbd> = Select / <kbd>Middle Mouse</kbd> = Orbit / <kbd>Right Mouse</kbd> = Pan / <kbd>Wheel</kbd> = Zoom / <kbd>Ctrl</kbd> = Multiple Select / <kbd>Del</kbd> = Delete Selected
+							<kbd>左键</kbd> = 选择 / <kbd>中键</kbd> = 旋转 / <kbd>右键</kbd> = 移动 / <kbd>滚轮</kbd> = 缩放 / <kbd>Ctrl</kbd> = 多选 / <kbd>Del</kbd> = 删除选择
 						</div>
 						<div id="simoverlay" class="text-center">
 							<button class="button dark drop-shadow" onclick="simSpeed();"><span class="icon"><span class="fas fa-tachometer-alt"></span></span><span class="caption"><span id="simspeedval">1</span>x</span></button>
-							<button id="runSimBtn" title="Run simulation" class="button dark drop-shadow" onclick="sim(0)" disabled><i class="fas fa-fighter-jet"></i> Simulate</button>&nbsp;
-							<button id="stopSimBtn" style="display: none;" title="Stop Sim" class="button dark drop-shadow" onclick="simstop()"><i class="fas fa-stop"></i> Stop Sim</button>&nbsp;
-							<button id="resetViewBtn" title="Stop Sim" class="button dark drop-shadow" onclick="resetView(object)"><i class="fas fa-stop"></i> Reset View</button>&nbsp;
+							<button id="runSimBtn" title="Run simulation" class="button dark drop-shadow" onclick="sim(0)" disabled><i class="fas fa-fighter-jet"></i> 模拟</button>&nbsp;
+							<button id="stopSimBtn" style="display: none;" title="Stop Sim" class="button dark drop-shadow" onclick="simstop()"><i class="fas fa-stop"></i> 停止</button>&nbsp;
+							<button id="resetViewBtn" title="Stop Sim" class="button dark drop-shadow" onclick="resetView(object)"><i class="fas fa-stop"></i> 重置视图</button>&nbsp;
 							<div class="text-left viewer-checkboxes drop-shadow">
 								<div data-role="collapse" data-collapsed="false" data-toggle-element="#collapse_toggle_1">
 									<input type="checkbox" data-role="checkbox" data-caption="Documents" checked data-style="2" id="view-docs">

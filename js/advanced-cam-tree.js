@@ -133,7 +133,7 @@ function fillTree() {
     }
 
   } else {
-    var instructions = `<p class="text-secondary text-center mt-3">Please select some Vectors by clicking them in the viewer or using the Documents tree above. Hold down Ctrl to select multiples, Ctrl+A for Select-All, etc. <br>Add them to a toolpath using the <kbd class="bg-openbuilds"> <i class="fa fa-plus" aria-hidden="true"></i> Create Toolpath</kbd> button</p>`
+    var instructions = `<p class="text-secondary text-center mt-3">请通过在查看器中单击它们或使用上面的文档树来选择一些矢量。按Ctrl选择多个，按Ctrl+A选择全部，等等。<br>添加到工具路径使用 <kbd class="bg-openbuilds"> <i class="fa fa-plus" aria-hidden="true"></i> 创建路径</kbd> 按钮</p>`
     $('#toolpathtree').append(instructions);
     $('#generatetpgcode').prop('disabled', true);
     $("#generatetpgcode").removeClass('success');

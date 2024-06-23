@@ -207,6 +207,6 @@ function animateTree() {
     $('#addJobBtn,#remJobBtn,#addJobMenuBtn').removeClass('success').prop('disabled', true)
     $("#tpaddpath-dropdown").prop('disabled', true);
 
-    $(".addJobBtn-text").html("Please select Vector(s) to create toolpaths");
+    $(".addJobBtn-text").html("请选择矢量来创建工具路径");
   }
 }
