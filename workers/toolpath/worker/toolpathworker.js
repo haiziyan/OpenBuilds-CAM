@@ -1280,7 +1280,7 @@ if (typeof window == "undefined") { // Only run as worker
         if (newClipperPaths.length < 1) {
           console.error("Clipper Simplification Failed!:");
         }
-        // calc Stepover
+        // calc 跨步式
         var cutwidth = ((config.offset * 2) * (config.stepover / 100)) //mm per cut
         // todo for newClipperPaths.length (Split each clipperpath into own pocket)
         // for (k = 1; k < newClipperPaths.length; k++) {
@@ -1365,7 +1365,7 @@ if (typeof window == "undefined") { // Only run as worker
         if (newClipperPaths.length < 1) {
           console.error("Clipper Simplification Failed!:");
         }
-        // calc Stepover
+        // calc 跨步式
         var cutwidth = ((config.offset * 2) * (config.stepover / 100)) //mm per cut
         // todo for newClipperPaths.length (Split each clipperpath into own pocket)
         for (k = 0; k < newClipperPaths.length; k++) {

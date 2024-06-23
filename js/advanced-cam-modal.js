@@ -310,7 +310,7 @@ function setupJob(i) {
     </table>
     <table class="table striped compact">
       <tr class="inputcnc inputpocket inputtooldia inputdrill inputplotter">
-        <td>Endmill / Pen Diameter</td>
+        <td>端铣刀/笔直径</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><img class="fa-fw" src="images/endmilldia.svg" width="16px" height="16px"></img></span>
@@ -320,7 +320,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputpocket">
-        <td>Stepover</td>
+        <td>跨步式</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><img class="fa-fw" src="images/endmilldia.svg" width="16px" height="16px"></img></span>
@@ -330,7 +330,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputcnc  inputpocket inputplasma inputdragknife inputlaser inputlaserraster inputdrill">
-        <td>Z Safe Height</td>
+        <td>Z 安全高度</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="fas fa-arrows-alt-v fa-fw"></i></span>
@@ -340,7 +340,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputdragknife">
-        <td>Drag Knife: Center Offset</td>
+        <td>拖刀：中心偏移</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><img class="fa-fw" src="images/dragoffset.svg" width="16px" height="16px"></img></span>
@@ -350,7 +350,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputlaser inputlaserraster">
-        <td>Laser: Power</td>
+        <td>激光 功率</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="fas fa-tachometer-alt fa-fw"></i></span>
@@ -360,7 +360,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputcnc inputpocket inputdrill">
-        <td>Spindle: RPM</td>
+        <td>主轴转速</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="fas fa-tachometer-alt fa-fw"></i></span>
@@ -370,7 +370,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputlaser inputlaserraster inputpenraster">
-        <td>Laser: Kerf / Line Spacing</td>
+        <td>激光：线宽/线距</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><img class="fa-fw" src="images/kerf.svg" width="16px" height="16px"></img></span>
@@ -380,7 +380,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputlaserraster inputpenraster">
-        <td>Fill: Angle</td>
+        <td>填充：角度</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><img class="fa-fw" src="images/protractor.svg" width="16px" height="16px"></img></span>
@@ -390,7 +390,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputcnc inputpocket inputdrillpeck">
-        <td>Cut Depth: per Pass</td>
+        <td>切割深度：每道</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="fas fa-sort-amount-down fa-fw"></i></span>
@@ -400,7 +400,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputcnc inputpocket inputdrill">
-        <td>Cut Depth: Final</td>
+        <td>切割深度： 最终</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="fas fa-level-down-alt fa-fw"></i></span>
@@ -410,7 +410,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputcnc inputpocket inputdragknife inputlaser inputlaserraster inputplasma inputplotter inputpenraster">
-        <td>Feedrate (X/Y)</td>
+        <td>进给速率（X/Y）</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="fas fa-exchange-alt fa-fw"></i></span>
@@ -420,7 +420,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputcnc inputplasma inputpocket inputdrill">
-        <td>Feedrate: Plunge</td>
+        <td>进给速率：插入</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="fas fa-exchange-alt fa-fw" data-fa-transform="rotate-90" ></i></span>
@@ -430,7 +430,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputplasma">
-        <td>Plasma: Kerf</td>
+        <td>等离子：切口</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><img class="fa-fw" src="images/kerf.svg" width="16px" height="16px"></img></span>
@@ -440,7 +440,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputplasma">
-        <td>Plasma: Pierce Height</td>
+        <td>等离子体：穿孔高度</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="fas fa-meteor fa-fw" data-fa-transform="rotate--45"></i></span>
@@ -450,7 +450,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputplasma">
-        <td>Plasma: Pierce Delay</td>
+        <td>等离子体：穿孔延迟</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="far fa-clock fa-fw"></i></span>
@@ -460,7 +460,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputplasma">
-        <td>Plasma: Cut Height</td>
+        <td>等离子：切割高度</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="fas fa-arrows-alt-v fa-fw"></i></span>
@@ -470,7 +470,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputplasma">
-        <td>Plasma: Lead-In Distance</td>
+        <td>等离子体：导入距离</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="fas fa-drafting-compass fa-fw"></i></span>
@@ -480,7 +480,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputplasma">
-        <td>Plasma: Touch-Off Zero</td>
+        <td>等离子体：触控零点</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="far fa-arrow-alt-circle-down fa-fw"></i></span>
@@ -492,7 +492,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputplotter inputpenraster">
-        <td>Plotter: Pen Up</td>
+        <td>绘图仪：笔向上</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="far fa-edit fa-fw"></i></span>
@@ -503,7 +503,7 @@ function setupJob(i) {
       </tr>
 
       <tr class="inputplotter inputpenraster">
-        <td>Plotter: Pen Down</td>
+        <td>绘图仪：笔向下</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="fas fa-edit fa-fw"></i></span>
@@ -517,13 +517,13 @@ function setupJob(i) {
 
 
     <div>
-      <input type="checkbox" data-role="switch" data-caption="Advanced Settings" id="advanced` + i + `" objectseq="` + i + `" >
+      <input type="checkbox" data-role="switch" data-caption="高级设置" id="advanced` + i + `" objectseq="` + i + `" >
     </div>
     <div data-role="collapse" data-collapsed="true" data-toggle-element="#advanced` + i + `" id="collapsediv` + i + `">
 
     <table class="table striped compact">
       <tr class="inputlaser inputlaserraster">
-        <td>Muliple passes:</td>
+        <td>多次通过：</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="fas fa-sort-amount-down fa-fw"></i></span>
@@ -533,7 +533,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputcnc inputpocket">
-        <td>Cutting Direction:</td>
+        <td>切割方向：</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="fas fa-compress fa-fw"></i></span>
@@ -545,7 +545,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputplasma inputcnc inputpocket inputdragknife inputlaser inputlasernooffset">
-        <td>Geometry: Merge</td>
+        <td>几何图形 合并</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="fas fa-compress fa-fw"></i></span>
@@ -572,7 +572,7 @@ function setupJob(i) {
         </td>
       </tr>
       <tr class="inputcnc inputpocket ">
-        <td>Cut Depth: Start</td>
+        <td>切割深度： 开始</td>
         <td>
           <div class="input-addon">
             <span class="input-addon-label-left active-border"><i class="fas fa-indent fa-fw" data-fa-transform="rotate-90" ></i></span>
