@@ -607,89 +607,86 @@ $(document).ready(function() {
                        <div>
 
                          <div class="row mb-2">
-                             <label class="cell-sm-6">X-Axis Length</label>
+                             <label class="cell-sm-6">X轴长度</label>
                              <div class="cell-sm-6">
                                <input type="number" data-role="input" data-clear-button="false" class="form-control " id="sizexmax" value="200" data-append="mm" step="any">
                              </div>
                          </div>
 
                          <div class="row mb-2">
-                             <label class="cell-sm-6">Y-Axis Length</label>
+                             <label class="cell-sm-6">Y轴长度</label>
                              <div class="cell-sm-6">
                                <input type="number" data-role="input" data-clear-button="false" class="form-control " id="sizeymax" value="200" data-append="mm" step="any">
                              </div>
                          </div>
 
                          <div class="row mb-2">
-                             <label class="cell-sm-6">Z-Axis Length</label>
+                             <label class="cell-sm-6">Z轴长度</label>
                              <div class="cell-sm-6">
                                <input type="number" data-role="input" data-clear-button="false" class="form-control " id="sizezmax" value="100" data-append="mm" step="any">
                              </div>
                          </div>
 
                          <div class="row mb-2">
-                             <label class="cell-sm-6">Spindle / Laser / Plasma Command</label>
+                             <label class="cell-sm-6">主轴/激光/等离子指令</label>
                              <div class="cell-sm-6">
                                  <input type="text" data-role="input" data-clear-button="false" class="form-control form-control-sm" id="scommand" value="S" >
                              </div>
                          </div>
 
                          <div class="row mb-2">
-                             <label class="cell-sm-6">Power/Speed Scale</label>
+                             <label class="cell-sm-6">功率/速度刻度</label>
                              <div class="cell-sm-6">
                                <input type="number" data-role="input" data-clear-button="false" class="form-control form-control-sm" id="scommandscale" value="1000" data-prepend="0 to" step="any">
                              </div>
                          </div>
 
                          <div class="row mb-2">
-                             <label class="cell-sm-6">Power/Speed on new-line</label>
+                             <label class="cell-sm-6">新线路上的功率/速度</label>
                              <div class="cell-sm-6">
                                    <input data-role="checkbox" type="checkbox" id="scommandnewline" value="option1">
                              </div>
                          </div>
 
                          <div class="row mb-2">
-                             <label class="cell-sm-6">Rapid Move Command</label>
+                             <label class="cell-sm-6">快速移动命令</label>
                              <div class="cell-sm-6">
                                  <input type="text" data-role="input" data-clear-button="false" class="form-control form-control-sm" id="g0command" value="G0" >
                              </div>
                          </div>
 
                          <div class="row mb-2">
-                             <label class="cell-sm-6">Linear Move Command</label>
+                             <label class="cell-sm-6">线性移动命令</label>
                              <div class="cell-sm-6">
                                  <input type="text" data-role="input" data-clear-button="false" class="form-control form-control-sm" id="g1command" value="G1" >
                              </div>
                          </div>
 
                          <div class="row mb-2">
-                             <label class="cell-sm-6">Start G-Code</label>
+                             <label class="cell-sm-6">启动 G 代码</label>
                              <div class="cell-sm-6">
-                               <textarea id="startgcode" data-role="textarea" data-auto-size="true" data-clear-button="false" placeholder="For example M4 G28 G90 M80 - supports multi line commands"></textarea>
+                               <textarea id="startgcode" data-role="textarea" data-auto-size="true" data-clear-button="false" placeholder="例如，M4、G28、G90、M80 - 支持多行命令"></textarea>
                              </div>
                          </div>
 
                          <div class="row mb-2">
-                             <label class="cell-sm-6">End G-Code</label>
+                             <label class="cell-sm-6">结束 G 代码</label>
                              <div class="cell-sm-6">
-                               <textarea id="endgcode" data-role="textarea" data-auto-size="true" data-clear-button="false" placeholder="For example M5 M81 G28 - supports multi line commands"></textarea>
+                               <textarea id="endgcode" data-role="textarea" data-auto-size="true" data-clear-button="false" placeholder="例如，M5、M81、G28 - 支持多行命令"></textarea>
                              </div>
                          </div>
 
                          <div class="row mb-2">
-                             <label class="cell-sm-6">Plasma: Touch Off Sequence</label>
+                             <label class="cell-sm-6">等离子：触控序列</label>
                              <div class="cell-sm-6">
-                               <textarea id="ihsgcode" data-role="textarea" contenteditable="true" data-auto-size="true" data-clear-button="false" placeholder="G0 + clearanceHeight + \nG38.2 Z-30 F100\nG10 L20 P1 Z0"></textarea>
+                               <textarea id="ihsgcode" data-role="textarea" contenteditable="true" data-auto-size="true" data-clear-button="false" placeholder="G0 + 间隙高度 + \nG38.2 Z-30 F100\nG10 L20 P1 Z0"></textarea>
                              </div>
                          </div>
 
                          <div class="row mb-0">
-                             <label class="cell-sm-6">Performance: Disable Tool-Width Preview<br>
+                             <label class="cell-sm-6">性能：禁用工具宽度预览<br>
                              <span class="text-small">
-                               This can speed up toolpath calculations, but will
-                               disable the toolpath-width preview: You'll only see
-                               the centerline of the toolpath, not the width of the
-                               cut.  Helps slow PCs work better
+                             这可以加快刀具路径计算速度，但会禁用刀具路径宽度预览：您只能看到刀具路径的中心线，而看不到切口的宽度。帮助慢速电脑更好地工作
                              </span>
                              </label>
                              <div class="cell-sm-6">

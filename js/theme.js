@@ -140,7 +140,7 @@ let ThemeData = {
     // }
   },
 
-  currentThemeId: "light", // Forcing dark mode after update
+  currentThemeId: "dark", // Forcing dark mode after update
 
   init: function init() {
     console.log(localStorage.getItem('themeId'))
@@ -163,12 +163,12 @@ let ThemeData = {
       let theme = ThemeData.THEMES["light"];
       let newIcon = $('<i class="fas fa-fw fa-' + theme.ICON + '"></i>');
       $("#currentThemeIcon").html(newIcon);
-      $("#currentThemeName").html("Light<br>Mode")
+      $("#currentThemeName").html("亮<br>模式")
     } else if (themeId == "light") {
       let theme = ThemeData.THEMES["dark"];
       let newIcon = $('<i class="fas fa-fw fa-' + theme.ICON + '"></i>');
       $("#currentThemeIcon").html(newIcon);
-      $("#currentThemeName").html("Dark<br>Mode")
+      $("#currentThemeName").html("暗<br>模式")
     }
 
 
@@ -208,12 +208,12 @@ let ThemeData = {
         let theme = ThemeData.THEMES["light"];
         let newIcon = $('<i class="fas fa-fw fa-' + theme.ICON + '"></i>');
         $("#currentThemeIcon").html(newIcon);
-        $("#currentThemeName").html("Light<br>Mode")
+        $("#currentThemeName").html("亮<br>模式")
       } else if (themeId == "light") {
         let theme = ThemeData.THEMES["dark"];
         let newIcon = $('<i class="fas fa-fw fa-' + theme.ICON + '"></i>');
         $("#currentThemeIcon").html(newIcon);
-        $("#currentThemeName").html("Dark<br>Mode")
+        $("#currentThemeName").html("暗<br>模式")
       }
       setTimeout(function() {
         $('#splash').fadeOut(400);
