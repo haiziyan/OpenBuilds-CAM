@@ -160,17 +160,17 @@ $(document).ready(function() {
   var modal = `
 
   <div class="dialog dark" data-overlay-click-close="true" data-role="dialog" id="addShapeText" data-to-top="true">
-    <div class="dialog-title" id="statusTitle">Add Text</div>
+    <div class="dialog-title" id="statusTitle"></div>
     <div class="dialog-content">
     <form>
       <div class="form-group row">
-        Create a new set of text paths
+      创建一组新的文本路径
         <table>
           <tr>
             <th style="width: 150px;"></th><th style="width: 210px;"></th>
           </tr>
           <tr>
-            <td>Font: </td>
+            <td>字体: </td>
             <td>
               <div class="input-addon">
                 <span class="input-addon-label-left  active-border"><i class="fas fa-font"></i></span>
@@ -179,7 +179,7 @@ $(document).ready(function() {
             </td>
           </tr>
           <tr>
-            <td>Size: </td>
+            <td>大小: </td>
             <td>
               <div class="input-addon">
                 <span class="input-addon-label-left active-border"><i class="fas fa-text-height"></i></span>
@@ -192,12 +192,12 @@ $(document).ready(function() {
     </form>
     <hr/>
     <div class="input-addon">
-      <input style="width: 100%;" id="texttorender" class="active-border" value="Type Here"></input>
+      <input style="width: 100%;" id="texttorender" class="active-border" value="你好"></input>
     </div>
     </div>
     <div class="dialog-actions" id="statusFooter">
-      <button class="button js-dialog-close">Cancel</button>
-      <button type="button" class="button js-dialog-close success" id="CreateText">Create</button>
+      <button class="button js-dialog-close">取消</button>
+      <button type="button" class="button js-dialog-close success" id="CreateText">创建</button>
     </div>
   </div>
 `
