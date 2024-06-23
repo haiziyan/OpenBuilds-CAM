@@ -68,41 +68,41 @@ function fillTree() {
                     <div class="toolbar mb-0">
                     `
 
-        toolp += `<button style="width: 60px;" class="tool-button primary" data-tooltip="tooltip" data-placement="bottom" title="Configure toolpath" onclick="setupJob(` + i + `);"><i class="fas fa-sliders-h"></i> Edit</button>`
+        toolp += `<button style="width: 60px;" class="tool-button primary" data-tooltip="tooltip" data-placement="bottom" title="配置刀具路径" onclick="setupJob(` + i + `);"><i class="fas fa-sliders-h"></i> 编辑</button>`
 
         toolp += `</div><div class="toolbar ml-1 mb-0">`
 
         if (i > 0) {
-          toolp += `<button class="tool-button success" data-tooltip="tooltip" data-placement="bottom" title="Move up" onclick="moveOp(` + i + `, -1); fillTree();"><i class="fa fa-arrow-up fa-fw" aria-hidden="true"></i></button>`
+          toolp += `<button class="tool-button success" data-tooltip="tooltip" data-placement="bottom" title="向上" onclick="moveOp(` + i + `, -1); fillTree();"><i class="fa fa-arrow-up fa-fw" aria-hidden="true"></i></button>`
         } else {
-          toolp += `<button class="tool-button success disabled" data-tooltip="tooltip" data-placement="bottom" title="Move up" onclick="moveOp(` + i + `, -1); fillTree();"><i class="fa fa-arrow-up fa-fw" aria-hidden="true"></i></button>`
+          toolp += `<button class="tool-button success disabled" data-tooltip="tooltip" data-placement="bottom" title="向上" onclick="moveOp(` + i + `, -1); fillTree();"><i class="fa fa-arrow-up fa-fw" aria-hidden="true"></i></button>`
         }
 
         if (i < toolpathsInScene.length - 1) {
-          toolp += `<button class="tool-button success" data-tooltip="tooltip" data-placement="bottom" title="Move down" onclick="moveOp(` + i + `, 1); fillTree();"><i class="fa fa-arrow-down fa-fw" aria-hidden="true"></i></button>`
+          toolp += `<button class="tool-button success" data-tooltip="tooltip" data-placement="bottom" title="向下" onclick="moveOp(` + i + `, 1); fillTree();"><i class="fa fa-arrow-down fa-fw" aria-hidden="true"></i></button>`
         } else {
-          toolp += `<button class="tool-button success  disabled" data-tooltip="tooltip" data-placement="bottom" title="Move down" onclick="moveOp(` + i + `, 1); fillTree();"><i class="fa fa-arrow-down fa-fw" aria-hidden="true"></i></button>`
+          toolp += `<button class="tool-button success  disabled" data-tooltip="tooltip" data-placement="bottom" title="向下" onclick="moveOp(` + i + `, 1); fillTree();"><i class="fa fa-arrow-down fa-fw" aria-hidden="true"></i></button>`
         }
 
         toolp += `</div><div class="toolbar ml-1 mb-0">`
 
-        toolp += `<button class="tool-button secondary" data-tooltip="tooltip" data-placement="bottom" title="Reselect toolpaths" onclick="setSelectionFromToolPath(` + i + `)"><i class="far fa-object-group fa-fw"></i></button>`
+        toolp += `<button class="tool-button secondary" data-tooltip="tooltip" data-placement="bottom" title="重新选择刀具路径" onclick="setSelectionFromToolPath(` + i + `)"><i class="far fa-object-group fa-fw"></i></button>`
 
         toolp += `</div><div class="toolbar ml-1 mb-0">`
 
 
         if (toolpathsInScene[i].userData.visible) {
-          toolp += `<button class="tool-button warning" data-tooltip="tooltip" data-placement="bottom" title="Hide toolpath and exclude from GCODE generation" onclick="toggleToolpathVisibility(` + i + `, false);"><i class="fa fa-fw fa-eye-slash" aria-hidden="true"></i></button>`
+          toolp += `<button class="tool-button warning" data-tooltip="tooltip" data-placement="bottom" title="隐藏刀具路径并从 GCODE 生成中排除" onclick="toggleToolpathVisibility(` + i + `, false);"><i class="fa fa-fw fa-eye-slash" aria-hidden="true"></i></button>`
         } else {
-          toolp += `<button class="tool-button alert" data-tooltip="tooltip" data-placement="bottom" title="Show toolpath and include in GCODE generation" onclick="toggleToolpathVisibility(` + i + `, true);"><i class="fa fa-fw fa-eye" aria-hidden="true"></i></button>`
+          toolp += `<button class="tool-button alert" data-tooltip="tooltip" data-placement="bottom" title="显示刀具路径并包含在 GCODE 生成中" onclick="toggleToolpathVisibility(` + i + `, true);"><i class="fa fa-fw fa-eye" aria-hidden="true"></i></button>`
         }
 
-        toolp += `<button class="tool-button alert" data-tooltip="tooltip" data-placement="bottom" title="Delete toolpath" onclick="storeUndo(); toolpathsInScene.splice('` + i + `', 1); fillTree();"><i class="fa fa-times fa-fw" aria-hidden="true"></i></button>`
+        toolp += `<button class="tool-button alert" data-tooltip="tooltip" data-placement="bottom" title="删除刀具路径" onclick="storeUndo(); toolpathsInScene.splice('` + i + `', 1); fillTree();"><i class="fa fa-times fa-fw" aria-hidden="true"></i></button>`
 
         toolp += `</div>`
 
         toolp += `
-            <span class="tally alert" style="display: none; margin-top: 6px;" id="toolpathSpinner` + i + `"><i class="fas fa-spinner fa-pulse"></i><small> calculating...</small></span>
+            <span class="tally alert" style="display: none; margin-top: 6px;" id="toolpathSpinner` + i + `"><i class="fas fa-spinner fa-pulse"></i><small> 计算中...</small></span>
                     </ul>
                     </td>
                     </tr>
