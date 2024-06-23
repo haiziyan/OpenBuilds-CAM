@@ -89,33 +89,33 @@ $(document).ready(function() {
   var modal = `
 
   <div class="dialog dark" data-overlay-click-close="true" data-role="dialog" id="addShapeCircle" data-to-top="true">
-    <div class="dialog-title" id="statusTitle">Add shape: Circle</div>
+    <div class="dialog-title" id="statusTitle">添加形状：圆</div>
     <div class="dialog-content">
     <form>
-      <input type="number" class="form-control" id="circleRadius" value="10" data-role="input" data-append="mm" data-prepend="Radius" step="any">
+      <input type="number" class="form-control" id="circleRadius" value="10" data-role="input" data-append="mm" data-prepend="半径" step="any">
       <br>
-      <input type="number" class="form-control" id="circleSegments" value="32" data-role="input"  data-prepend="Segments" step="any">
-      <small>Segments determines the smoothness of the circle, as circles are processed as Polylines</small>
+      <input type="number" class="form-control" id="circleSegments" value="32" data-role="input"  data-prepend="分段" step="any">
+      <small>分段决定圆的平滑度，因为圆是作为多段线处理的</small>
     </form>
     </div>
     <div class="dialog-actions" id="statusFooter">
-      <button class="button js-dialog-close">Cancel</button>
-      <button type="button" class="button js-dialog-close success" id="CreateCircle">Create</button>
+      <button class="button js-dialog-close">取消</button>
+      <button type="button" class="button js-dialog-close success" id="CreateCircle">创建</button>
     </div>
   </div>
 
   <div class="dialog dark" data-overlay-click-close="true" data-role="dialog" id="addShapeRect" data-to-top="true">
-		<div class="dialog-title" id="statusTitle">Add shape: Rectangle</div>
+		<div class="dialog-title" id="statusTitle">添加形状：矩形</div>
 		<div class="dialog-content">
     <form>
-      <input type="number" class="form-control" id="rectX" value="100" data-role="input" data-append="mm" data-prepend="Width" step="any">
+      <input type="number" class="form-control" id="rectX" value="100" data-role="input" data-append="mm" data-prepend="宽度" step="any">
       <br>
-      <input type="number" class="form-control" id="rectY" value="50" data-role="input" data-append="mm" data-prepend="Height" step="any">
+      <input type="number" class="form-control" id="rectY" value="50" data-role="input" data-append="mm" data-prepend="高度" step="any">
     </form>
 		</div>
 		<div class="dialog-actions" id="statusFooter">
-			<button class="button js-dialog-close">Cancel</button>
-      <button type="button" class="button js-dialog-close success" id="CreateRect">Create</button>
+			<button class="button js-dialog-close">取消</button>
+      <button type="button" class="button js-dialog-close success" id="CreateRect">创建</button>
 		</div>
 	</div>
   `
