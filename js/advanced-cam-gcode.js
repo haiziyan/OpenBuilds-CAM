@@ -33,7 +33,7 @@ function makeGcodeExec() {
     $('#gcodejobs').empty();
 
     // Button on Ribbon Menu
-    $("#generatetpgcode").html("<i class='fa fa-spinner fa-spin '></i> Generating, please wait");
+    $("#generatetpgcode").html("<i class='fa fa-spinner fa-spin '></i> 正在生成，请稍候");
     $("#generatetpgcode").prop('disabled', true);
     $("#generatetpgcode").removeClass('success');
 

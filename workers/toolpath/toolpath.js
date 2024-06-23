@@ -11,7 +11,7 @@ function toolpathPreview(i) {
 
 
 function drawToolpath(index) {
-  $("#generatetpgcode").html("<i class='fa fa-spinner fa-spin '></i> Unavailable, please wait");
+  $("#generatetpgcode").html("<i class='fa fa-spinner fa-spin '></i> 不可用，请等待");
   $("#generatetpgcode").prop('disabled', true);
   $("#generatetpgcode").removeClass('success');
 
@@ -48,13 +48,13 @@ function drawToolpath(index) {
         toolpathsInScene[index].userData.worker = false;
 
         if (toolpathWorkersBusy()) {
-          $("#generatetpgcode").html("<i class='fa fa-spinner fa-spin '></i> Unavailable, please wait");
+          $("#generatetpgcode").html("<i class='fa fa-spinner fa-spin '></i> 不可用，请等待");
           $("#generatetpgcode").prop('disabled', true);
           $("#generatetpgcode").removeClass('success');
 
 
         } else {
-          $("#generatetpgcode").html("<i class='fa fa-cubes' aria-hidden='true'></i> Generate G-Code");
+          $("#generatetpgcode").html("<i class='fa fa-cubes' aria-hidden='true'></i> 生成G代码");
           $("#generatetpgcode").prop('disabled', false);
           $("#generatetpgcode").addClass('success');
 

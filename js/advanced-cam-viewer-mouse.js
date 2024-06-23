@@ -15,15 +15,15 @@ function mouseSelectMode() {
   var isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
   if (!isMac) {
     if (controls.enableRotate) {
-      helpoverlay.innerHTML = "<kbd>Left Mouse</kbd> = Select / <kbd>Middle Mouse</kbd> = Orbit / <kbd>Right Mouse</kbd> = Pan / <kbd>Wheel</kbd> = Zoom / <kbd>Ctrl</kbd> = Multiple Select / <kbd>Del</kbd> = Delete Selected"
+      helpoverlay.innerHTML = "<kbd>左键</kbd> = 选择 / <kbd>中键</kbd> = 旋转 / <kbd>右键</kbd> = 移动 / <kbd>Wheel</kbd> = 缩放 / <kbd>Ctrl</kbd> = 多选 / <kbd>Del</kbd> = 删除所选"
     } else {
-      helpoverlay.innerHTML = "<kbd>Left Mouse</kbd> = Select / <kbd>Right Mouse</kbd> = Pan / <kbd>Wheel</kbd> = Zoom / <kbd>Ctrl</kbd> = Multiple Select / <kbd>Del</kbd> = Delete Selected"
+      helpoverlay.innerHTML = "<kbd>左键</kbd> = 选择 / <kbd>右键</kbd> = 移动 / <kbd>Wheel</kbd> = 缩放 / <kbd>Ctrl</kbd> = 多选 / <kbd>Del</kbd> = 删除所选"
     }
   } else {
     if (controls.enableRotate) {
-      helpoverlay.innerHTML = "<kbd>Left Mouse</kbd> = Select / <kbd>Middle Mouse</kbd> = Orbit / <kbd>Right Mouse</kbd> = Pan / <kbd>Wheel</kbd> = Zoom / <kbd>Ctrl</kbd> = Multiple Select / <kbd>Del</kbd> = Delete Selected"
+      helpoverlay.innerHTML = "<kbd>左键</kbd> = 选择 / <kbd>中键</kbd> = 旋转 / <kbd>右键</kbd> = 移动 / <kbd>Wheel</kbd> = 缩放 / <kbd>Ctrl</kbd> = 多选 / <kbd>Del</kbd> = 删除所选"
     } else {
-      helpoverlay.innerHTML = "<kbd>Ctrl</kbd> = Multiple Select / <kbd>Del</kbd> = Delete Selected"
+      helpoverlay.innerHTML = "<kbd>Ctrl</kbd> = 多选 / <kbd>Del</kbd> = 删除所选"
     }
   }
 
@@ -40,7 +40,7 @@ function mouseMoveMode() {
   // deselectAllObjects()
   var documents2 = scene.getObjectByName("Documents");
   dragcontrols = new THREE.DragControls(objectsInScene, camera, renderer.domElement);
-  helpoverlay.innerHTML = "<kbd>Left Mouse Drag</kbd> = Select Document to move / <kbd>Ctrl+Left Mouse Drag</kbd> = Select entity to move / <kbd>Del</kbd> = Delete Selected"
+  helpoverlay.innerHTML = "<kbd>鼠标左键拖动</kbd> = 选择要移动的文档 / <kbd>Ctrl+鼠标左键拖动</kbd> = 选择要移动的实体 / <kbd>Del</kbd> = 删除所选"
 };
 
 // delete mode
@@ -56,7 +56,7 @@ function mouseEraseMode() {
   if (dragcontrols) {
     dragcontrols.dispose();
   }
-  helpoverlay.innerHTML = "<kbd>Left Mouse Click</kbd> = delete Entity / <kbd>Ctrl + Left Mouse Click</kbd> = Delete entire Document / <kbd>Del</kbd> = Delete Selected"
+  helpoverlay.innerHTML = "<kbd>左键点击</kbd> = 删除实体 / <kbd>Ctrl + 左键点击</kbd> = 删除整个文档 / <kbd>Del</kbd> = 删除所选"
 };
 
 // scale mode
@@ -70,7 +70,7 @@ function mouseScaleMode() {
   $(".mouseDelBtn").removeClass('tbtnactive');
   $(".mouseScaleBtn").addClass('tbtnactive');
   deselectAllObjects()
-  helpoverlay.innerHTML = "<kbd>Left Mouse Click</kbd> = Select Entity to scale"
+  helpoverlay.innerHTML = "<kbd>左键点击</kbd> = 选择要缩放的实体"
 };
 
 function initMouseMode() {
