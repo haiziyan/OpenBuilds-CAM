@@ -88,7 +88,7 @@
 
 										<div class="group">
 
-											<div class="ribbon-button btn-file" title="Open a drawing">
+											<div class="ribbon-button btn-file" title="打开绘图">
 												<span class="icon">
 													<span class="far fa-folder-open fg-amber"></span>
 												</span>
@@ -349,9 +349,9 @@
 						</div>
 						<div id="simoverlay" class="text-center">
 							<button class="button dark drop-shadow" onclick="simSpeed();"><span class="icon"><span class="fas fa-tachometer-alt"></span></span><span class="caption"><span id="simspeedval">1</span>x</span></button>
-							<button id="runSimBtn" title="Run simulation" class="button dark drop-shadow" onclick="sim(0)" disabled><i class="fas fa-fighter-jet"></i> 模拟</button>&nbsp;
-							<button id="stopSimBtn" style="display: none;" title="Stop Sim" class="button dark drop-shadow" onclick="simstop()"><i class="fas fa-stop"></i> 停止</button>&nbsp;
-							<button id="resetViewBtn" title="Stop Sim" class="button dark drop-shadow" onclick="resetView(object)"><i class="fas fa-stop"></i> 重置视图</button>&nbsp;
+							<button id="runSimBtn" title="运行模拟" class="button dark drop-shadow" onclick="sim(0)" disabled><i class="fas fa-fighter-jet"></i> 模拟</button>&nbsp;
+							<button id="stopSimBtn" style="display: none;" title="停止模拟" class="button dark drop-shadow" onclick="simstop()"><i class="fas fa-stop"></i> 停止</button>&nbsp;
+							<button id="resetViewBtn" title="重置视图" class="button dark drop-shadow" onclick="resetView(object)"><i class="fas fa-stop"></i> 重置视图</button>&nbsp;
 							<div class="text-left viewer-checkboxes drop-shadow">
 								<div data-role="collapse" data-collapsed="false" data-toggle-element="#collapse_toggle_1">
 									<input type="checkbox" data-role="checkbox" data-caption="文档" checked data-style="2" id="view-docs">
@@ -393,7 +393,7 @@
 										<p class="text-secondary text-center mt-3">请从 DXF（折线）或 SVG（路径）加载一些矢量;或图像（可追溯）;或使用内置工具插入形状、图标或一些文本以开始使用
 										</p>
 										<p class="text-center">
-											<button class="button success drop-shadow" style="width: 300px;" title="Open Drawing" onclick="$('#file').click();"><span class="far fa-folder-open fa-fw icon"></span>打开绘图</button>
+											<button class="button success drop-shadow" style="width: 300px;" title="打开绘图" onclick="$('#file').click();"><span class="far fa-folder-open fa-fw icon"></span>打开绘图</button>
 										</p>
 
 
@@ -484,7 +484,7 @@
 			<!-- avoiding popup when right mouse is clicked -->
 
 			<div class="dialog dark" data-overlay-click-close="true" data-role="dialog" id="statusmodal" data-to-top="true" data-width="540">
-				<div class="dialog-title" id="statusTitle">Status title </div>
+				<div class="dialog-title" id="statusTitle">状态标题 </div>
 				<div class="dialog-content">
 					<div id="statusBody"></div>
 					<div id="statusBody2" style="overflow-y: auto; height: calc(100vh - 430px); "></div>
@@ -496,9 +496,9 @@
 			</div>
 
 			<div class="dialog dark" data-overlay-click-close="true" data-role="dialog" id="iconslibModal" data-width="800" data-to-top="true">
-				<div class="dialog-title">Icons Library</div>
+				<div class="dialog-title">图标库</div>
 				<div class="dialog-content" style="max-height: calc(100vh - 200px);overflow-y: auto; overflow-x: hidden;">
-					Click Icon below to load it into CAM project:
+					单击下面的图标将其加载到 CAM 项目中:
 					<hr>
 					<div id="iconslibrary">
 
